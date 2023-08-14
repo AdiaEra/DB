@@ -9,7 +9,7 @@ from DB import cur, con
 def add_client(clients_id: int):
     """
     Функция, позволяющая добавить нового клиента
-    clients_id = телеграм id клиента
+    :param: clients_id - телеграм id клиента
     """
     if cur.fetchone() is None:
         try:
